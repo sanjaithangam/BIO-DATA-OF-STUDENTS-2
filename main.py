@@ -31,7 +31,7 @@ with Create:
     section = st.text_input("SECTION: ").strip().upper()
     roll_no = st.text_input("ROLL NO: ").strip().upper()
     if name != "" and admission_no != "" and clas != "" and section != "" and roll_no != "":
-        if name not in list(df["NAME"]):
+        if admission_no not in list(df["ADMISSION NO"]):
             with open(file_location, 'a') as f:
                 writer = csv.writer(f)
                 writer.writerow([name, admission_no, clas, section, roll_no])
