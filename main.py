@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
 import csv
 
 st.set_page_config(page_title = "BIO-DATA OF STUDENTS", page_icon=":smile:")
@@ -11,7 +10,7 @@ Update = st.container()
 Read = st.container()
 Delete = st.container()
 
-file_location = 'C:\sanjai\BIO DATA OF STUDENTS\Students.csv'
+file_location = 'Students.csv'
 
 with title:
     st.header("BIO-DATA OF STUDENTS")
