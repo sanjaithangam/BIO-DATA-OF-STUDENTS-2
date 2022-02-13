@@ -103,7 +103,7 @@ with Delete:
             result = st.text_input("ARE YOU SURE: ").strip().upper()
             if result == "YES":
                 for i in range(0, rows):
-                    if ADmission_no == df.iloc[i, 1]:
+                    if ADmission_no == df.iloc[1, i]:
                         NAMe = df.iloc[i, 0]
                         df = df[df["ADMISSION NO"] != ADmission_no]
                         df.to_csv(file_location, index=False)
